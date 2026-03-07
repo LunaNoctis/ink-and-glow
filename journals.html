@@ -42,8 +42,8 @@
     <div class="card cat-product-card reveal">
       <div class="cat-product-card__img"><img src="pics/purple-butterfly.webp"></div>
       <div class="cat-product-card__body">
-        <span class="cat-product-card__tag">SCRAPBOOK JOURNAL KIT</span>
-        <h3 class="cat-product-card__name">WEMOL 346Pcs Vintage Journal Scrapbook Kit (Purple Butterfly)</h3>
+        <span class="cat-product-card__tag">PURPLE BUTTERFLY</span>
+        <h3 class="cat-product-card__name">WEMOL 346Pcs Vintage Aesthetic Journal Scrapbook Kit</h3>
         <p class="cat-product-card__desc">Aesthetic journaling kit with a beautiful purple butterfly theme. Perfect for scrapbooking, bullet journaling, planners, and creative DIY projects.</p>
         <ul class="cat-product-card__features">
           <li>✓ A6 grid notebook with 256 pages</li>
@@ -64,43 +64,45 @@
     <!-- END PRODUCT CARD -->
 
     <div class="card cat-product-card reveal">
-      <div class="cat-product-card__img">📒</div>
+      <div class="cat-product-card__img"><img src="pics/nature-theme.webp"></div>
       <div class="cat-product-card__body">
-        <span class="cat-product-card__tag">Softcover</span>
-        <h3 class="cat-product-card__name">Moleskine Classic Notebook</h3>
-        <p class="cat-product-card__desc">Iconic rounded corners, elastic band and pocket. The notebook that's been carried by artists and thinkers for decades.</p>
+        <span class="cat-product-card__tag">NATURE</span>
+        <h3 class="cat-product-card__name">MGNLR 346Pcs Vintage Aesthetic Journal Scrapbook Kit</h3>
+        <p class="cat-product-card__desc">A calming nature-themed journal filled with earthy designs, perfect for writing, planning, scrapbooking, and capturing your daily thoughts and ideas.</p>
         <ul class="cat-product-card__features">
-          <li>✓ 192 pages, cream paper</li>
-          <li>✓ Lay-flat binding</li>
-          <li>✓ Inner pocket for loose pages</li>
+          <li>✓ 346-piece scrapbook kit including A6 grid notebook, vintage papers, envelopes, and photo frames</li>
+          <li>✓ 256-page portable A6 notebook perfect for journaling, planning, and daily notes</li>
+          <li>✓ Variety of stickers, washi tapes, and decorative papers for creative scrapbooking</li>
+          <li>✓ Vintage themed designs featuring plants, flowers, skies, mountains, and classic ephemera</li>
         </ul>
         <div class="cat-product-card__footer">
           <div>
-            <span class="cat-product-card__price">$19.99</span>
-            <span class="cat-product-card__stars">★★★★☆ 4.6 (8k reviews)</span>
+            <span class="cat-product-card__price"></span>
+            <span class="cat-product-card__stars">★★★★☆ 4.4</span>
           </div>
-          <a href="YOUR_AMAZON_AFFILIATE_LINK_HERE" target="_blank" rel="noopener" class="btn btn--amazon">🛒 View on Amazon</a>
+          <a href="https://amzn.to/3NlHO5G" target="_blank" rel="noopener" class="btn btn--amazon">🛒 View on Amazon</a>
         </div>
       </div>
     </div>
 
     <div class="card cat-product-card reveal">
-      <div class="cat-product-card__img">📗</div>
+      <div class="cat-product-card__img"><img src="pics/european-retro-q2.webp"></div>
       <div class="cat-product-card__body">
-        <span class="cat-product-card__tag">Hardcover</span>
-        <h3 class="cat-product-card__name">Paperage Lined Journal</h3>
-        <p class="cat-product-card__desc">Thick 100gsm paper that's fountain-pen friendly with zero bleed-through. A budget pick that punches above its weight.</p>
+        <span class="cat-product-card__tag">EUROPEAN RETRO QUEEN 2</span>
+        <h3 class="cat-product-card__name">MGNLR 346Pcs Vintage Aesthetic Journal Scrapbook Kit</h3>
+        <p class="cat-product-card__desc">A vintage European retro queen themed journal kit inspired by classic royalty, antique letters, and elegant palace aesthetics. Perfect for scrapbooking, journaling, and creative DIY projects.</p>
         <ul class="cat-product-card__features">
-          <li>✓ 160 pages, 100 gsm paper</li>
-          <li>✓ Fountain pen safe</li>
-          <li>✓ Hardcover with lay-flat design</li>
+          <li>✓ Elegant retro queen and royal European themed designs</li>
+          <li>✓ Decorative vintage papers, stickers, and journaling elements</li>
+          <li>✓ Perfect for scrapbooking, planners, and creative journaling</li>
+          <li>✓ Antique aesthetic inspired by classic European royalty</li>
         </ul>
         <div class="cat-product-card__footer">
           <div>
-            <span class="cat-product-card__price">$12.99</span>
-            <span class="cat-product-card__stars">★★★★★ 4.7 (5k reviews)</span>
+            <span class="cat-product-card__price"></span>
+            <span class="cat-product-card__stars">★★★★★ 4.4</span>
           </div>
-          <a href="YOUR_AMAZON_AFFILIATE_LINK_HERE" target="_blank" rel="noopener" class="btn btn--amazon">🛒 View on Amazon</a>
+          <a href="https://amzn.to/4cuzb2U" target="_blank" rel="noopener" class="btn btn--amazon">🛒 View on Amazon</a>
         </div>
       </div>
     </div>
@@ -175,7 +177,12 @@
 .cat-product-card__img {
   background: var(--misty-rose);
   display: flex; align-items: center; justify-content: center;
-  font-size: 4rem; min-height: 200px;
+  font-size: 4rem; min-height: 200px; overflow: hidden;
+}
+.cat-product-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .cat-product-card__body { padding: 1.8rem; }
 .cat-product-card__tag {
