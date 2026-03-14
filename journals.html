@@ -25,16 +25,6 @@
   <p class="page-hero__sub anim-3">Our favourite picks for writing, bullet journaling, and everyday note-taking — all on Amazon.</p>
 </header>
 
-<!-- FILTER BAR (optional, just visual) -->
-<div class="filter-bar">
-  <span class="filter-bar__label">Filter by:</span>
-  <button class="filter-btn filter-btn--active">All</button>
-  <button class="filter-btn">Under $20</button>
-  <button class="filter-btn">Dotted</button>
-  <button class="filter-btn">Lined</button>
-  <button class="filter-btn">Hardcover</button>
-</div>
-
 <section class="section">
   <div class="cat-products-grid">
 
@@ -75,6 +65,7 @@
           <li>✓ Variety of stickers, washi tapes, and decorative papers for creative scrapbooking</li>
           <li>✓ Vintage themed designs featuring plants, flowers, skies, mountains, and classic ephemera</li>
         </ul>
+        <p class="cat-product-card__desc">Image for illustration purpose only.</p>
         <div class="cat-product-card__footer">
           <div>
             <span class="cat-product-card__price"></span>
@@ -97,6 +88,7 @@
           <li>✓ Perfect for scrapbooking, planners, and creative journaling</li>
           <li>✓ Antique aesthetic inspired by classic European royalty</li>
         </ul>
+        <p class="cat-product-card__desc">Image for illustration purpose only.</p>
         <div class="cat-product-card__footer">
           <div>
             <span class="cat-product-card__price"></span>
@@ -153,21 +145,6 @@
 </footer>
 
 <style>
-.filter-bar {
-  display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
-  padding: 1.2rem 5rem; background: #fff;
-  border-bottom: 1px solid rgba(67,32,51,0.08);
-}
-.filter-bar__label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--tulipan); font-weight: 500; }
-.filter-btn {
-  padding: 0.4rem 1.1rem; border-radius: var(--radius-pill);
-  border: 1.5px solid rgba(67,32,51,0.15); background: transparent;
-  font-family: var(--font-body); font-size: 0.78rem;
-  color: var(--eggplant); cursor: pointer;
-  transition: all var(--transition);
-}
-.filter-btn:hover      { border-color: var(--raspberry); color: var(--raspberry); }
-.filter-btn--active    { background: var(--eggplant); color: var(--misty-rose); border-color: var(--eggplant); }
 
 .cat-products-grid {
   display: grid; grid-template-columns: 1fr;
@@ -225,12 +202,6 @@
   reveals.forEach(el => observer.observe(el));
 
   // Filter buttons (visual only — just toggles active state)
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('filter-btn--active'));
-      btn.classList.add('filter-btn--active');
-    });
-  });
 </script>
 </body>
 </html>
